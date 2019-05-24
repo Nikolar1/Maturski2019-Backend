@@ -72,7 +72,7 @@ app.post('/hranilica', function(req, res){
 });
 
 
-app.post('/stanica', function(req, res){
+app.post('/stanica', cors(), function(req, res){
   var datetime = new Date();
 
   var sql = "SELECT * FROM stanica";
