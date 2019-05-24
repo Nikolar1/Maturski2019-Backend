@@ -28,6 +28,5 @@ var checkToken = (req, res, next) => {
   }
 };
 module.exports = {
-  checkTokenradnik: checkTokenradnik,
-  checkTokenrukovodilac: checkTokenrukovodilac
+  checkToken: checkToken
 }
