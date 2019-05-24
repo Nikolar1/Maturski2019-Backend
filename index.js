@@ -135,7 +135,7 @@ app.get('/',middleware.checkToken, function(req, res){
     });
 });
 
-app.post('/Authentification', function(req, res){
+app.post('/Authentification',cors(), function(req, res){
 
   var lista;
   console.log(req.body);
