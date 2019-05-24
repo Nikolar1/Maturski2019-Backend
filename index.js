@@ -178,7 +178,7 @@ var interval = setInterval(function() {
   });
 }, 1000);
 
-app.listen(port, (err) => {
+app.listen(process.env.PORT || port, (err) => {
   if (err) console.log(err.message);
   console.log("App running on port " + port + " of localhost");
 });
